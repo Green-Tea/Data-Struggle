@@ -1,0 +1,8 @@
+LanCableTest.java
+ LanCableTest
+RecursivePalTest.java
+ RecursivePalTest
+MinOpsTest.java
+ MinOpsTest
+AllAliasesTest.java
+ AllAliasesTest

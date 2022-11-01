@@ -1,0 +1,16 @@
+Prove that for all n >= 1, sumSqr(n) -> 1^2 + 2^2 + 3^2 + ... + n^2
+
+sumHelper returns the sum of all squared numbers from 1 to n (1^2 + 2^2 + ... + n^2) plus a.
+
+Base cases:
+n = 1, a = 0: returns 1
+n = 2, a = 0: returns 5
+
+Inductive hypothesis:
+for any n >= 1, P(k) = sumHelper(n, a) -> 1^2 + ... + n^2 + a
+
+Inductive step:
+assume that P(k+1) holds for n > 1, then sumHelper(k+1) -> 1^2 + ... + n^2 + (n+1)^2 + a.
+We know how to get P(k), so P(k+1) is only P(k) + (n+1)^2. Thus proving the inductive step.
+
+sumSqr(n) is a method that calls sumHelper(n, 0). So with the steps above, we have also proved that the initial claim holds.
